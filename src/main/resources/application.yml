@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+userconfig:
+  name: user1
+  age: 10
+  address:
+    province: 浙江
+    city: 杭州
