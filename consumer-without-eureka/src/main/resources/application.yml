@@ -1,0 +1,8 @@
+server:
+  port: 8112
+spring:
+  application:
+    name: consumer
+provider:
+  ribbon:
+    listOfServers: localhost:8011,localhost:8012

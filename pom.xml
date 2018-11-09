@@ -20,8 +20,10 @@
 
     <modules>
         <module>discovery</module>
-        <module>provider1</module>
+        <module>provider</module>
         <module>discoveryha</module>
+        <module>consumer</module>
+        <module>consumer-without-eureka</module>
     </modules>
 
     <properties>

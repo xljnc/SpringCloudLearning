@@ -1,5 +1,9 @@
 spring:
   application:
     name: discovery-cluster
-
 debug: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

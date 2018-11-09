@@ -9,3 +9,5 @@
 /discovery/.mvn/
 /discoveryha/.mvn/
 /provider1/.mvn/
+/consumer/.mvn/
+/consumer-without-eureka/.mvn/

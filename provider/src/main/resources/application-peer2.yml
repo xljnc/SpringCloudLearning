@@ -1,0 +1,6 @@
+server:
+  port: 8012
+eureka:
+  instance:
+    metadata-map:
+      name: peer2

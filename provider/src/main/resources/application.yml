@@ -1,8 +1,6 @@
-server:
-  port: 8010
 spring:
   application:
-    name: provider1
+    name: provider
 eureka:
   client:
     serviceUrl:
@@ -13,3 +11,8 @@ eureka:
       app: Shit
       sign: Holy Shit!
 debug: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
