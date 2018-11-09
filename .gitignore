@@ -7,3 +7,5 @@
 *.iml
 *.ipr
 /discovery/.mvn/
+/discoveryha/.mvn/
+/provider1/.mvn/

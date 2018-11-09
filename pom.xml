@@ -20,6 +20,8 @@
 
     <modules>
         <module>discovery</module>
+        <module>provider1</module>
+        <module>discoveryha</module>
     </modules>
 
     <properties>
