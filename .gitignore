@@ -11,3 +11,4 @@
 /provider1/.mvn/
 /consumer/.mvn/
 /consumer-without-eureka/.mvn/
+/.mvn/
