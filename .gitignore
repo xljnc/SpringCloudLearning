@@ -12,3 +12,4 @@
 /consumer/.mvn/
 /consumer-without-eureka/.mvn/
 /.mvn/
+/consumer-with-feign/.mvn/
