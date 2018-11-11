@@ -1,12 +1,11 @@
 package com.wt.spring.provider.controller;
 
+import com.wt.spring.provider.dto.request.InstanceInfoDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.serviceregistry.Registration;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -34,5 +33,15 @@ public class FirstController {
     @GetMapping("/info/get")
     public String getProviderInfos() {
         return "Host:" + registration.getHost() + ",port:" + registration.getPort();
+    }
+
+    @PostMapping("/instance/{id}/info")
+    public String getInstanceInfo(@PathVariable Integer id) {
+        return "ID:" + id + ",Host:" + registration.getHost() + ",port:" + registration.getPort();
+    }
+
+    @PostMapping("/instance/param/test")
+    public String testInstanceInfo(@RequestBody InstanceInfoDto params) {
+        return params.toString() + ",Host:" + registration.getHost() + ",port:" + registration.getPort();
     }
 }
