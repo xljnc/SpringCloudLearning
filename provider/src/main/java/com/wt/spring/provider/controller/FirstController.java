@@ -5,7 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.serviceregistry.Registration;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -43,5 +48,10 @@ public class FirstController {
     @PostMapping("/instance/param/test")
     public String testInstanceInfo(@RequestBody InstanceInfoDto params) {
         return params.toString() + ",Host:" + registration.getHost() + ",port:" + registration.getPort();
+    }
+
+    @GetMapping("/fallback/test")
+    public String testFallback() {
+        return "Method call success.";
     }
 }

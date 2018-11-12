@@ -4,3 +4,13 @@ spring:
   application:
     name: feignConsumer
 debug: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+##新版本feign默认禁用hystrix来避免一些问题。
+#feign:
+#  hystrix:
+#    enabled: true
