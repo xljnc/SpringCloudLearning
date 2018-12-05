@@ -50,7 +50,7 @@ public class ConsumerFeignController {
 
 
     public String defaultFallback() {
-        return "Method call failed,using default fallback.";
+        return "Method call failed,using ConsumerFeignController fallback.";
     }
 
 }
