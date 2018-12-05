@@ -14,3 +14,4 @@
 /.mvn/
 /consumer-with-feign/.mvn/
 /provider/.mvn/
+/hystrix-dashboard/.mvn/

@@ -25,6 +25,7 @@
         <module>consumer</module>
         <module>consumer-without-eureka</module>
         <module>consumer-with-feign</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <properties>
