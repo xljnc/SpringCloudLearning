@@ -5,4 +5,4 @@ spring:
     name: consumer
 provider:
   ribbon:
-    listOfServers: localhost:8011,localhost:8012
+    listOfServers: peer1:8011,peer2:8012
