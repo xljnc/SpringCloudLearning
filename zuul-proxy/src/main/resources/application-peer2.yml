@@ -1,0 +1,6 @@
+server:
+  port: 8334
+eureka:
+  instance:
+    metadata-map:
+      name: peer2

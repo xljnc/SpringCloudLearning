@@ -1,10 +1,9 @@
-server:
-  port: 8333
-
 spring:
   application:
     name: zuul-proxy
 eureka:
+  instance:
+    prefer-ip-address: false
   client:
     service-url:
       defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/

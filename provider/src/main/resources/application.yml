@@ -6,7 +6,7 @@ eureka:
     service-url:
       defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
     metadata-map:
       app: Shit
       sign: Holy Shit!
